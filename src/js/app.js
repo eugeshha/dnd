@@ -16,7 +16,7 @@ class TrelloBoard {
     }
 
     createDropIndicator() {
-    }
+  }
 
   bindEvents() {
         document.querySelectorAll('.add-card-btn').forEach(btn => {
@@ -38,8 +38,8 @@ class TrelloBoard {
                 } else if (e.key === 'Escape') {
                     this.hideAddCardForm(form);
                 }
-            });
-        });
+      });
+    });
 
         this.bindDragAndDrop();
     }
@@ -152,7 +152,7 @@ class TrelloBoard {
         if (cards.length === 0 || index >= cards.length) {
             const placeholder = this.createPlaceholder();
             cardsContainer.append(placeholder);
-        } else {
+      } else {
             const targetCard = cards[index];
             if (targetCard && targetCard.parentNode) {
                 const placeholder = this.createPlaceholder();
@@ -359,6 +359,6 @@ class TrelloBoard {
 
 let trelloBoard;
 document.addEventListener('DOMContentLoaded', () => {
-    trelloBoard = new TrelloBoard();
+  trelloBoard = new TrelloBoard();
     window.trelloBoard = trelloBoard;
 });
