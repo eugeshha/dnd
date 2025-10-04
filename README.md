@@ -1,4 +1,4 @@
-![CI](https://github.com/eugeshha/working-env/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/eugeshha/dnd/actions/workflows/web.yml/badge.svg)
 
 # Webpack5
 
@@ -8,4 +8,4 @@
 
 # Перейти на страницу для тестов
 
-[Веб](https://eugeshha.github.io/working-env/)
+[Веб](https://eugeshha.github.io/dnd/)
