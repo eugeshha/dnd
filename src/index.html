@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Board</title>
 </head>
 <body>
-<h1>Hello, from Netology!</h1>
-<img src="img/netology.svg" alt="Netology Logo">
+    <div class="board">
+        <div class="board-header">
+            <h1>Trello Board</h1>
+        </div>
+        
+        <div class="columns-container">
+            <div class="column" data-column="todo">
+                <div class="column-header">
+                    <h2>TODO</h2>
+                </div>
+                <div class="cards-container" data-cards="todo">
+                    <!-- Карточки будут добавляться динамически -->
+                </div>
+                <div class="add-card-section">
+                    <button class="add-card-btn" data-column="todo">+ Add another card</button>
+                    <div class="add-card-form" style="display: none;">
+                        <textarea placeholder="Enter a title for this card..." class="card-input"></textarea>
+                        <div class="form-buttons">
+                            <button class="add-card-submit">Add Card</button>
+                            <button class="add-card-cancel">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column" data-column="progress">
+                <div class="column-header">
+                    <h2>IN PROGRESS</h2>
+                </div>
+                <div class="cards-container" data-cards="progress">
+                    <!-- Карточки будут добавляться динамически -->
+                </div>
+                <div class="add-card-section">
+                    <button class="add-card-btn" data-column="progress">+ Add another card</button>
+                    <div class="add-card-form" style="display: none;">
+                        <textarea placeholder="Enter a title for this card..." class="card-input"></textarea>
+                        <div class="form-buttons">
+                            <button class="add-card-submit">Add Card</button>
+                            <button class="add-card-cancel">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column" data-column="done">
+                <div class="column-header">
+                    <h2>DONE</h2>
+                </div>
+                <div class="cards-container" data-cards="done">
+                    <!-- Карточки будут добавляться динамически -->
+                </div>
+                <div class="add-card-section">
+                    <button class="add-card-btn" data-column="done">+ Add another card</button>
+                    <div class="add-card-form" style="display: none;">
+                        <textarea placeholder="Enter a title for this card..." class="card-input"></textarea>
+                        <div class="form-buttons">
+                            <button class="add-card-submit">Add Card</button>
+                            <button class="add-card-cancel">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
